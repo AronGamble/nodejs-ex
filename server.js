@@ -91,6 +91,11 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+app.get('/guitar',function(req,res){
+  res.render('guitar.html', { pageCountMessage : null});
+});
+
+
 // error handling
 app.use(function(err, req, res, next){
   console.error(err.stack);
